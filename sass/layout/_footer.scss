@@ -41,14 +41,6 @@
 	fill: $primary-light-txt-color;
 }
 
-.join-us__wrapper {
-	padding-left: 70px;
-}
-
-.sign-up__wrapper {
-	padding-left: 78px;
-}
-
 .join-us,
 .sing-up {
 	font-weight: 700;
@@ -59,10 +51,6 @@
 	color: $primary-light-txt-color;
 	padding-top: 12px;
 	padding-bottom: 20px;
-}
-
-.sign-up__form {
-	display: flex;
 }
 
 .sign-up__btn {
@@ -78,14 +66,14 @@
 }
 
 .sign-up__input {
-	width: 358px;
+	max-width: 450px;
 	height: 50px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background-color: transparent;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	padding-left: 16px;
-	margin-right: 12px;
+	margin-bottom: 20px;
 	color: $primary-light-txt-color;
 
 	&:focus {
@@ -95,5 +83,52 @@
 
 	&:focus::placeholder {
 		color: $primary-light-txt-color;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.sign-up__input {
+		width: 450px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.address__wrapper,
+	.join-us__wrapper,
+	.sign-up__wrapper {
+		flex-basis: calc(100% / 2);
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.join-us__wrapper {
+		padding-left: 70px;
+	}
+
+	.sign-up__wrapper {
+		padding-left: 78px;
+	}
+
+	.sign-up__form {
+		display: flex;
+	}
+
+	.sign-up__input {
+		width: 358px;
+		margin-right: 12px;
+
+		&:focus {
+			outline: none;
+			border-color: $primary-light-txt-color;
+		}
+
+		&:focus::placeholder {
+			color: $primary-light-txt-color;
+		}
+	}
+	.address-list__item {
+		&:last-child {
+			padding-bottom: 0;
+		}
 	}
 }
