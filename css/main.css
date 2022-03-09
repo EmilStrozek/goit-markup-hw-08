@@ -142,6 +142,15 @@ a {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .footer .section {
+    padding-bottom: 60px;
+  }
+}
 
 .close-btn {
   display: flex;
@@ -167,14 +176,14 @@ a {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #2196f3;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
 
 .logo__accent--dark-theme {
   color: #212121;
@@ -182,6 +191,27 @@ a {
 
 .logo__accent--light-theme {
   color: #ffffff;
+}
+
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 83px;
+  }
+  .logo--footer {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .backdrop {
