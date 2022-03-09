@@ -12,6 +12,11 @@
   overflow: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+  .visually-hidden {
+    left: 14px;
+  }
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
@@ -54,9 +59,9 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  min-width: 320px;
   padding: 0 15px;
-  margin: 0 auto;
 }
 
 .footer .container {
@@ -64,11 +69,17 @@ a {
   display: flex;
 }
 
-.header .container {
+.hero .container {
+  height: 400px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
+.our-team .container {
+  display: block;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
