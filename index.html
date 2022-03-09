@@ -56,7 +56,56 @@
       <use href="images/icons.svg#smartphone"></use>
     </svg>+48 111 111 111</a>
     </div>
+<button mobile-menu-open type="button" class="menu-mobile__open">
+  <svg class="menu-mobile__open-icon">
+    <use href="./images/icons.svg#open"></use>
+  </svg>
+</button>
+</div>
 
+<div mobile-menu class="menu-mobile backdrop is-hidden">
+  <button type="button" class="close-btn menu-mobile__close-btn" mobile-menu-close>
+    <svg class="close-btn__icon">
+      <use href="images/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+
+  <ul class="menu-mobile__list">
+    <li class="menu-mobile__item list">
+      <a class="menu-mobile__link menu-mobile__link--active" href="index.html">Agencja</a>
+    </li>
+    <li class="menu-mobile__item list">
+      <a class="menu-mobile__link" href="portfolio.html">Portfolio</a>
+    </li>
+    <li class="menu-mobile__item list">
+      <a class="menu-mobile__link" href="#">Kontakt</a>
+    </li>
+  </ul>
+  <ul class="mobile-contacts">
+    <li class="mobile-contacts__item list">
+      <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+48111111111">
+        +48 111 111 111</a>
+    </li>
+    <li class="mobile-contacts__item list">
+      <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+        info@devstudio.com</a>
+    </li>
+  </ul>
+  <ul class="mobile-socials">
+    <li class="mobile-socials__item list">
+      <a href="" class="mobile-socials__link">Instagram</a>
+    </li>
+    <li class="mobile-socials__item list">
+      <a href="" class="mobile-socials__link">Twitter</a>
+    </li>
+    <li class="mobile-socials__item list">
+      <a href="" class="mobile-socials__link">Facebook</a>
+    </li>
+    <li class="mobile-socials__item list">
+      <a href="" class="mobile-socials__link">LinkedIn</a>
+    </li>
+  </ul>
+</div>
     </header>
 
     
@@ -182,7 +231,7 @@
 
 
       <!-- Czym się zajmujemy / What we do-->
-      <section class="what-we-do-list section">
+      <section class="what-we-do">
         <div class="container">
           <h2 class="second-header">Czym się zajmujemy</h2>
         <ul class="what-we-do__list list">
@@ -191,7 +240,7 @@
             <!-- Nazwy folderów piszę zawsze z małej litery! -->
             <img
               class="what-we-do__img"
-              src="images/image1.jpg"
+              src="images/images_mainpage/whatwedo/1img370x294.jpg"
               alt="monitor, keyboard and laptop"
               width="370"
               height="296"
@@ -201,7 +250,7 @@
           <li class="what-we-do__item">
             <img
               class="what-we-do__img"
-              src="images/image2.jpg"
+              src="images/images_mainpage/whatwedo/2img370x294.jpg"
               alt="phone and laptop"
               width="370"
               height="294"
@@ -211,7 +260,7 @@
           <li class="what-we-do__item">
             <img
               class="what-we-do__img"
-              src="images/image3.jpg"
+              src="images/images_mainpage/whatwedo/3img370x294.jpg"
               alt="color palette tablet"
               width="370"
               height="294"
