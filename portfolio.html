@@ -38,21 +38,74 @@
           </li>
         </ul>
       </nav>
-      <a class="email" href="mailto:info@devstudio.com">
-        <svg class="email__icon">
-          <use href="images/icons.svg#envelope"></use>
-        </svg>info@devstudio.com</a>
-      <a href="tel:+48111111111" class="phone-number">
-        <svg class="phone-number__icon">
-          <use href="images/icons.svg#smartphone"></use>
+      <div class="contact">
+        <a class="email" href="mailto:info@devstudio.com">
+          <svg class="email__icon">
+            <use href="images/icons.svg#envelope"></use>
+          </svg>info@devstudio.com</a>
+        <a href="tel:+48111111111" class="phone-number">
+          <svg class="phone-number__icon">
+            <use href="images/icons.svg#smartphone"></use>
+          </svg>
+          +48 111 111 111</a>
+      </div>
+      
+      <button mobile-menu-open type="button" class="menu-mobile__open">
+        <svg class="menu-mobile__open-icon">
+          <use href="./images/icons.svg#open"></use>
         </svg>
-        +48 111 111 111</a>
-    </div>
+      </button>
+      </div>
+      
+      <div mobile-menu class="menu-mobile backdrop is-hidden">
+        <button type="button" class="close-btn menu-mobile__close-btn" mobile-menu-close>
+          <svg class="close-btn__icon">
+            <use href="images/icons.svg#close-icon"></use>
+          </svg>
+        </button>
+      
+        <ul class="menu-mobile__list">
+          <li class="menu-mobile__item list">
+            <a class="menu-mobile__link" href="index.html">Agencja</a>
+          </li>
+          <li class="menu-mobile__item list">
+            <a class="menu-mobile__link menu-mobile__link--active" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-mobile__item list">
+            <a class="menu-mobile__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="mobile-contacts__item list">
+            <a class="mobile-contacts__link mobile-contacts__link--accent" href="tel:+48111111111">
+              +48 111 111 111</a>
+          </li>
+          <li class="mobile-contacts__item list">
+            <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile-socials">
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">Instagram</a>
+          </li>
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">Twitter</a>
+          </li>
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">Facebook</a>
+          </li>
+          <li class="mobile-socials__item list">
+            <a href="" class="mobile-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
   </header>
 
   <!--TREŚĆ GŁÓWNA Z FILTRAMI-->
   <main>
-     <section class="section container">
+     <section class="portfolio section">
+      <div class="container">
       <ul class="filters__list list">
         <li class="filters__item">
           <button class="filter__btn" type="button">Wszystkie</button>
@@ -74,12 +127,25 @@
       <ul class="projects__list list">
         <li class="projects__item">
           <div class="projects__wrapper">
+            <picture class="projects__img">
+              <source srcset="
+            											images/images_portfolio/1img370x294.jpg    1x,
+            											images/images_portfolio/1img370x294@2x.jpg 2x
+            										" media="(min-width: 1200px)" />
+              <source srcset="
+            											images/images_portfolio/1img354x294.jpg    1x,
+            											images/images_portfolio/1img354x294@2x.jpg 2x
+            										" media="(min-width: 768px)" />
+              <source srcset="
+            											images/images_portfolio/1img450x294.jpg    1x,
+            											images/images_portfolio/1img450x294@2x.jpg 2x
+            										" media="(min-width: 480px)" />
             <img 
             class="projects__img" 
-            src="images/laptopscreen.jpg" 
+            src="images/images_portfolio/1img320x240.jpg " 
             alt="laptopscreen" 
-            width="370" 
-            height="294" />
+            />
+            </picture>
 
             <div class="projects__text-popup">
               <p>
@@ -97,12 +163,25 @@
         </li>
         <li class="projects__item">
           <div class="projects__wrapper">
+            <picture class="projects__img">
+              <source srcset="
+            											images/images_portfolio/2img370x294.jpg    1x,
+            											images/images_portfolio/2img370x294@2x.jpg 2x
+            										" media="(min-width: 1200px)" />
+              <source srcset="
+            											images/images_portfolio/2img354x294.jpg    1x,
+            											images/images_portfolio/2img354x294@2x.jpg 2x
+            										" media="(min-width: 768px)" />
+              <source srcset="
+            											images/images_portfolio/2img450x294.jpg    1x,
+            											images/images_portfolio/2img450x294@2x.jpg 2x
+            										" media="(min-width: 480px)" />
             <img 
             class="projects__img" 
-            src="images/neworleangraphic.jpg" 
+            src="images/images_portfolio/2img320x240.jpg " 
             alt="Basketball: New Orlean vs Golden Star"
-              width="370" 
-              height="294" />
+            />
+            </picture>
 
             <div class="projects__text-popup">
               <p>
@@ -122,12 +201,26 @@
         </li>
         <li class="projects__item">
           <div class="projects__wrapper">
+            <picture class="projects__img">
+              <source srcset="
+            											images/images_portfolio/3img370x294.jpg    1x,
+            											images/images_portfolio/3img370x294@2x.jpg 2x
+            										" media="(min-width: 1200px)" />
+              <source srcset="
+            											images/images_portfolio/3img354x294.jpg    1x,
+            											images/images_portfolio/3img354x294@2x.jpg 2x
+            										" media="(min-width: 768px)" />
+              <source srcset="
+            											images/images_portfolio/3img450x294.jpg    1x,
+            											images/images_portfolio/3img450x294@2x.jpg 2x
+            										" media="(min-width: 480px)" />
             <img 
             class="projects__img" 
-            src="images/seafoodlogo.jpg" 
-            alt="Seafood leaflet" 
-            width="370" 
-            height="294" />
+            src="images/images_portfolio/3img320x240.jpg" 
+            alt="Seafood leaflet"
+            />
+            </picture>
+            
             <div class="projects__text-popup">
               <p>
                 Technocrack jest popularną platformą wykorzystywaną do
