@@ -1,8 +1,7 @@
-
 .visually-hidden {
   position: absolute !important;
   top: 18px;
-  left: 14px;
+  left: 5px;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0 !important;
@@ -22,6 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+
 button {
   font-family: inherit;
 }
@@ -44,11 +44,7 @@ p {
 ul,
 ol {
   margin: 0;
-  padding: 0;  
-}
-
-.list {
-  list-style: none;
+  padding: 0;
 }
 
 img {
@@ -59,15 +55,14 @@ a {
   text-decoration: none;
 }
 
+.list {
+  list-style: none;
+}
+
 .container {
   width: 100%;
   min-width: 320px;
   padding: 0 15px;
-}
-
-.footer .container {
-  padding-top: 60px;
-  display: flex;
 }
 
 .hero .container {
@@ -138,8 +133,8 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -184,7 +179,6 @@ a {
   padding-bottom: 16px;
 }
 
-
 .logo__accent--dark-theme {
   color: #212121;
 }
@@ -192,7 +186,6 @@ a {
 .logo__accent--light-theme {
   color: #ffffff;
 }
-
 
 @media screen and (min-width: 768px) {
   .logo {
@@ -753,7 +746,7 @@ a {
   flex-wrap: wrap;
 }
 
-.atributes--icon-wrapper {
+.atributes__icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1034,6 +1027,10 @@ a {
   color: #ffffff;
   padding-top: 12px;
   padding-bottom: 20px;
+}
+
+.primary-btn_footer {
+  padding: 10px 37px;
 }
 
 .sign-up__btn {
